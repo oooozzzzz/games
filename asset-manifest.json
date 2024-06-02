@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/games/static/js/main.395ea37a.js",
+    "static/js/453.114fd8a8.chunk.js": "/games/static/js/453.114fd8a8.chunk.js",
+    "index.html": "/games/index.html",
+    "main.395ea37a.js.map": "/games/static/js/main.395ea37a.js.map",
+    "453.114fd8a8.chunk.js.map": "/games/static/js/453.114fd8a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.395ea37a.js"
+  ]
+}
