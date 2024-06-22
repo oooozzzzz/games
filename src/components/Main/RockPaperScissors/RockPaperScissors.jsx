@@ -19,7 +19,7 @@ const ConnectButton = styled.button`
 `;
 
 const Center = styled.div`
-	background: #000;
+	background: transparent;
 	height: 70%;
 	width: 100%;
 `;

@@ -15,7 +15,7 @@ const Body = styled.div`
 	display: flex;
 	flex-direction: column;
 	background: linear-gradient(90deg, #69b7eb, #b3dbd3, #f4d6db);
-	height: 100%;
+	min-height: 100vh;
 `;
 
 const App = (props) => {
