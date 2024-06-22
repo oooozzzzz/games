@@ -1,8 +1,7 @@
-import { Letters } from "./Letters";
 import {
 	updateCurrentWordAction,
 	updatetWordAction,
-} from "../../../redux/viselitsa-reducer";
+} from "../../../../redux/viselitsa-reducer.js";
 import { connect } from "react-redux";
 import { LettersC } from "./Letters С";
 

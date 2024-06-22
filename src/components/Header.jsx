@@ -63,8 +63,8 @@ export const Header = () => {
 				</NavLink>
 				</HeaderItem>
 				<HeaderItem className="header__item">
-				<NavLink to='/comingsoon'>
-					<a href="###">Скоро</a>
+				<NavLink to='/rockpaperscissors'>
+					<a href="###">КНБ</a>
 					</NavLink>
 				</HeaderItem>
 				<HeaderItem className="header__item">

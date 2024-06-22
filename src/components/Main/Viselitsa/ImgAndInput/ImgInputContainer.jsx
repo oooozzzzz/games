@@ -2,7 +2,7 @@ import { connect } from "react-redux";
 import {
 	confirmLetterAction,
 	updateNewLetterAction,
-} from "../../../redux/viselitsa-reducer";
+} from "../../../../redux/viselitsa-reducer";
 import { ImgInput } from "./ImgInput";
 
 

@@ -3,8 +3,9 @@ import React from "react";
 import styled from "styled-components";
 // import { Flex } from "../Flex";
 import { Route, Routes } from "react-router-dom";
-import { Viselitsa } from "../Viselitsa/Viselitsa";
+import { Viselitsa } from "./Viselitsa/Viselitsa";
 import { ComminSoonContainer } from "./CommingSoon/CommingSoonContainer";
+import { RockPaperScissors } from "./RockPaperScissors/RockPaperScissors";
 
 const MainTitle = styled.div`
 	display: flex;
@@ -95,13 +96,14 @@ export const Main = (props) => {
 	return (
 		<main className="main">
 			<MainTitle className="main__title title">
-				<h1 className="title__text">PORTFOLIO</h1>
+				<h1 className="title__text">GAMES</h1>
 			</MainTitle>
 			<MainLanding className="main__landing landing">
 				<Game className="game">
 					<Routes>
 						<Route path="/viselitsa" element={<Viselitsa />} />
 						<Route path="/comingsoon" element={<ComminSoonContainer />} />
+						<Route path="/rockpaperscissors" element={<RockPaperScissors />} />
 					</Routes>
 				</Game>
 				{/* <LandingText className="landing__text">
