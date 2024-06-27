@@ -21,7 +21,6 @@ export const Viselitsa = (props) => {
 	return (
 		<Container className="container">
 			<ImgInputContainer />
-
 			<LettersContainer />
 		</Container>
 	);

@@ -20,15 +20,12 @@ const ConnectButton = styled.button`
 
 const Center = styled.div`
 	background: transparent;
-	height: 70%;
+	height: 55%;
 	width: 100%;
 `;
 
-
-
 const Wrapper = styled.div`
 	height: 100%;
-
 `
 
 export const RockPaperScissors = (props) => {

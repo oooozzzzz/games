@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import { Flex } from "../../../Flex";
 import styled from "styled-components";
 import { IconButton } from "./IconButton";
+import { Icon } from "./Icon";
 
 const StyledIconButtons = styled.div`
 	width: 100%;
-	height: 15%;
+	height: 30%;
 `;
+
+const ResultIcon = styled.div`
+	height: 50%;
+`
 export const IconButtons = (props) => {
 	const [buttons, setButtons] = useState([
 		{ text: "rock", active: false },
@@ -41,10 +46,21 @@ export const IconButtons = (props) => {
 		);
 	};
 
+// const onClick = (event, active) => {
+// 	debugger
+// 	if (active) return setFalse
+// 	else return setTrue
+// }
+
 	return (
 		<>
 			<StyledIconButtons className="iconButtons">
-				<Flex align="center" height={"100%"} justify={"space-evenly"}>
+				<ResultIcon className="resultIcon">
+					<Flex align="center" height={"100%"} justify='center'>
+						<Icon active={active} />
+					</Flex>
+					</ResultIcon>
+				<Flex align="center" height={"50%"} justify={"space-evenly"}>
 					{buttons.map((e) => {
 						return (
 							<IconButton
@@ -52,6 +68,8 @@ export const IconButtons = (props) => {
 								active={e.active}
 								setTrue={setTrue}
 								setFalse={setFalse}
+								// onClick={onClick}
+								// Доделать онклик
 							/>
 						);
 					})}
