@@ -11,7 +11,7 @@ const StyledIconButtons = styled.div`
 
 const ResultIcon = styled.div`
 	height: 50%;
-`
+`;
 export const IconButtons = (props) => {
 	const [buttons, setButtons] = useState([
 		{ text: "rock", active: false },
@@ -24,7 +24,7 @@ export const IconButtons = (props) => {
 		setButtons(
 			buttons.map((button) => {
 				if (event.target.textContent === button.text) {
-					setActive(button.text)
+					setActive(button.text);
 					return { ...button, active: true };
 				} else {
 					return { ...button, active: false };
@@ -37,7 +37,7 @@ export const IconButtons = (props) => {
 		setButtons(
 			buttons.map((button) => {
 				if (event.target.textContent === button.text) {
-					setActive('')
+					setActive("");
 					return { ...button, active: false };
 				} else {
 					return button;
@@ -46,20 +46,18 @@ export const IconButtons = (props) => {
 		);
 	};
 
-// const onClick = (event, active) => {
-// 	debugger
-// 	if (active) return setFalse
-// 	else return setTrue
-// }
+	const onClick = (event, active) => {
+		active ? setFalse(event) : setTrue(event);
+	};
 
 	return (
 		<>
 			<StyledIconButtons className="iconButtons">
 				<ResultIcon className="resultIcon">
-					<Flex align="center" height={"100%"} justify='center'>
+					<Flex align="center" height={"100%"} justify="center">
 						<Icon active={active} />
 					</Flex>
-					</ResultIcon>
+				</ResultIcon>
 				<Flex align="center" height={"50%"} justify={"space-evenly"}>
 					{buttons.map((e) => {
 						return (
@@ -68,8 +66,7 @@ export const IconButtons = (props) => {
 								active={e.active}
 								setTrue={setTrue}
 								setFalse={setFalse}
-								// onClick={onClick}
-								// Доделать онклик
+								onClick={onClick}
 							/>
 						);
 					})}

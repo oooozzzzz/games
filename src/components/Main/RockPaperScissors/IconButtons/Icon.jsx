@@ -26,12 +26,12 @@ const items = {
 };
 
 export const Icon = ({ active }) => {
-	// const sendData = async () => {
-	// 	await axios.post(postserver, {
-	// 		item: active,
-	// 		name: 'Dimas'
-	// 	});
-	// };
+	const sendData = async () => {
+		await axios.post(postserver, {
+			item: active,
+			name: 'Dimas'
+		});
+	};
 
 	// const getData = async () => {
 	// 	const { data } = await axios.get("http://localhost:5000/get-item")
@@ -46,7 +46,7 @@ export const Icon = ({ active }) => {
 				<IconButton
 					margin="0 0 0 15px"
 					text="confirm"
-					// onClick={sendData}
+					onClick={sendData}
 				>
 					confirm
 				</IconButton>

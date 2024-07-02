@@ -31,7 +31,7 @@ const StyledButton = styled.button`
 
 export const IconButton = ({ text, active, setTrue, setFalse, margin, onClick }) => {
 	return (
-		<StyledButton active={active} onClick={active ? setFalse : setTrue} margin={margin}>
+		<StyledButton active={active} onClick={onClick} margin={margin}>
 			{text}
 		</StyledButton>
 	);
